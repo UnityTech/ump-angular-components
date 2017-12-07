@@ -1,0 +1,14 @@
+<md-menu class="ump-sidenav--project-list">
+  <md-button ng-click="$mdMenu.open($event)" class="ump-sidenav--project-item">
+    {{ $ctrl.selectedProject.name }}
+    <md-icon>keyboard_arrow_down</md-icon>
+  </md-button>
+
+  <md-menu-content>
+    <md-menu-item ng-value="project" ng-repeat="project in $ctrl.projectList">
+      <md-button ng-click="$ctrl.onSelect({ project })">
+        {{ project.name }}
+      </md-button>
+    </md-menu-item>
+ </md-menu-content>
+</md-menu>

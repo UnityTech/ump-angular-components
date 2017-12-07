@@ -1,0 +1,54 @@
+@import "../../../stylesheets/variables";
+@import "../../../stylesheets/mixins";
+
+.sidenav--heading {
+  @include sidenav-item-base();
+  border-left: 3px solid transparent;
+
+  &:hover {
+    background: $side-item-focus-bg;
+  }
+
+  md-icon {
+    @include icon-size(16px);
+
+    color: rgba(0, 0, 0, 0.54);
+    margin: 0 20px;
+  }
+
+  .sidenav--section-toggle {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+
+.sidenav--submenu {
+  height: 0;
+  overflow: hidden;
+
+  &.isOpen {
+    height: 100%;
+  }
+}
+
+.sidenav--link {
+  color: $color-font;
+  height: $side-item-height;
+  line-height: $side-item-height;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+}
+
+.sidenav--subitem {
+  @include sidenav-item-base();
+
+  border-left: 3px solid transparent;
+  padding-left: 70px;
+
+  &.active {
+    font-weight: 500;
+    color: $color-primary;
+    border-left-color: $color-primary;
+  }
+}

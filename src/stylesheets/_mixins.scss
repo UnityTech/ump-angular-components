@@ -1,0 +1,23 @@
+@import './variables';
+
+@mixin icon-size($size) {
+  font-size: $size;
+  height: $size;
+  min-height: $size;
+  width: $size;
+  min-width: $size;
+}
+
+@mixin sidenav-item-base() {
+  align-items: center;
+  color: $color-font;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: $side-item-height;
+  padding: 0;
+  margin: 0;
+  text-transform: initial;
+  width: 100%;
+}

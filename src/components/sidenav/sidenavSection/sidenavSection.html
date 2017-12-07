@@ -1,0 +1,68 @@
+<div class="sidenav--section">
+  <!-- Single item -->
+  <md-button ng-if="!$ctrl.item.menu" class="sidenav--heading">
+    <!-- Links to a state -->
+    <div
+      ng-if="$ctrl.item.sref"
+      ng-click="$ctrl.closeSidenav()"
+      ui-sref="{{ $ctrl.item.sref }}"
+      ui-sref-active="active"
+      class="sidenav--link">
+        <md-icon md-font-set="{{ $ctrl.item.iconFamily || md }}">
+          {{ $ctrl.item.icon || 'view_module' }}
+        </md-icon>
+        {{ $ctrl.item.text | translate }}
+    </div>
+    <!-- Links to an external URL -->
+    <a
+      ng-if="$ctrl.item.href"
+      ng-click="$ctrl.closeSidenav()"
+      ng-href="{{ $ctrl.item.href }}"
+      ng-class="{ 'active': $ctrl.isActive($ctrl.item.href) }"
+      class="sidenav--link">
+        <md-icon md-font-set="{{ $ctrl.item.iconFamily || md }}">
+          {{ $ctrl.item.icon || 'view_module' }}
+        </md-icon>
+        {{ $ctrl.item.text | translate }}
+    </a>
+  </md-button>
+
+  <!-- Item group -->
+  <div ng-if="$ctrl.item.menu" ng-click="$ctrl.toggle();" class="sidenav--heading">
+    <md-icon md-font-set="{{ $ctrl.item.iconFamily || md }}">
+      {{ $ctrl.item.icon || 'view_module' }}
+    </md-icon>
+
+    {{ $ctrl.item.text | translate }}
+
+    <md-icon class="sidenav--section-toggle">{{
+      $ctrl.isOpen
+        ? 'keyboard_arrow_down'
+        : 'keyboard_arrow_up'
+    }}</md-icon>
+  </div>
+
+  <div class="sidenav--submenu" ng-class="{ 'isOpen': $ctrl.isOpen }" ng-if="$ctrl.item.menu">
+    <div ng-repeat="subitem in $ctrl.item.menu track by $index">
+      <!-- Links to a state -->
+      <md-button
+        ng-if="subitem.sref"
+        ng-click="$ctrl.closeSidenav()"
+        ui-sref="{{ subitem.sref }}"
+        ui-sref-active="active"
+        class="sidenav--subitem">
+          {{ subitem.text | translate }}
+      </md-button>
+
+      <!-- Links to an external URL -->
+      <md-button
+        ng-if="subitem.href"
+        ng-click="$ctrl.closeSidenav()"
+        ng-href="{{ subitem.href }}"
+        ng-class="{ 'active': $ctrl.isActive(subitem.href) }"
+        class="sidenav--subitem">
+          {{ subitem.text | translate }}
+      </md-button>
+    </div>
+  </div>
+</div>
