@@ -1,7 +1,7 @@
 @import "../../../stylesheets/variables";
 @import "../../../stylesheets/mixins";
 
-.sidenav--heading {
+.ump-sidenav--heading {
   @include sidenav-item-base();
   border-left: 3px solid transparent;
 
@@ -16,13 +16,13 @@
     margin: 0 20px;
   }
 
-  .sidenav--section-toggle {
+  .ump-sidenav--section-toggle {
     margin-left: auto;
     margin-right: 20px;
   }
 }
 
-.sidenav--submenu {
+.ump-sidenav--submenu {
   height: 0;
   overflow: hidden;
 
@@ -31,16 +31,7 @@
   }
 }
 
-.sidenav--link {
-  color: $color-font;
-  height: $side-item-height;
-  line-height: $side-item-height;
-  text-align: left;
-  text-decoration: none;
-  width: 100%;
-}
-
-.sidenav--subitem {
+.ump-sidenav--subitem {
   @include sidenav-item-base();
 
   border-left: 3px solid transparent;

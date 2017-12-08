@@ -1,48 +1,47 @@
-<div class="sidenav--section">
+<div class="ump-sidenav--section">
   <!-- Single item -->
-  <md-button ng-if="!$ctrl.item.menu" class="sidenav--heading">
+  <div ng-if="!$ctrl.item.menu">
     <!-- Links to a state -->
-    <div
+    <md-button
       ng-if="$ctrl.item.sref"
-      ng-click="$ctrl.closeSidenav()"
       ui-sref="{{ $ctrl.item.sref }}"
       ui-sref-active="active"
-      class="sidenav--link">
+      class="ump-sidenav--heading">
         <md-icon md-font-set="{{ $ctrl.item.iconFamily || md }}">
           {{ $ctrl.item.icon || 'view_module' }}
         </md-icon>
         {{ $ctrl.item.text | translate }}
-    </div>
+    </md-button>
+
     <!-- Links to an external URL -->
-    <a
+    <md-button
       ng-if="$ctrl.item.href"
-      ng-click="$ctrl.closeSidenav()"
       ng-href="{{ $ctrl.item.href }}"
       ng-class="{ 'active': $ctrl.isActive($ctrl.item.href) }"
-      class="sidenav--link">
+      class="ump-sidenav--heading">
         <md-icon md-font-set="{{ $ctrl.item.iconFamily || md }}">
           {{ $ctrl.item.icon || 'view_module' }}
         </md-icon>
         {{ $ctrl.item.text | translate }}
-    </a>
-  </md-button>
+    </md-button>
+  </div>
 
   <!-- Item group -->
-  <div ng-if="$ctrl.item.menu" ng-click="$ctrl.toggle();" class="sidenav--heading">
+  <div ng-if="$ctrl.item.menu" ng-click="$ctrl.toggle();" class="ump-sidenav--heading">
     <md-icon md-font-set="{{ $ctrl.item.iconFamily || md }}">
       {{ $ctrl.item.icon || 'view_module' }}
     </md-icon>
 
     {{ $ctrl.item.text | translate }}
 
-    <md-icon class="sidenav--section-toggle">{{
+    <md-icon class="ump-sidenav--section-toggle">{{
       $ctrl.isOpen
         ? 'keyboard_arrow_down'
         : 'keyboard_arrow_up'
     }}</md-icon>
   </div>
 
-  <div class="sidenav--submenu" ng-class="{ 'isOpen': $ctrl.isOpen }" ng-if="$ctrl.item.menu">
+  <div class="ump-sidenav--submenu" ng-class="{ 'isOpen': $ctrl.isOpen }" ng-if="$ctrl.item.menu">
     <div ng-repeat="subitem in $ctrl.item.menu track by $index">
       <!-- Links to a state -->
       <md-button
@@ -50,7 +49,7 @@
         ng-click="$ctrl.closeSidenav()"
         ui-sref="{{ subitem.sref }}"
         ui-sref-active="active"
-        class="sidenav--subitem">
+        class="ump-sidenav--subitem">
           {{ subitem.text | translate }}
       </md-button>
 
@@ -60,7 +59,7 @@
         ng-click="$ctrl.closeSidenav()"
         ng-href="{{ subitem.href }}"
         ng-class="{ 'active': $ctrl.isActive(subitem.href) }"
-        class="sidenav--subitem">
+        class="ump-sidenav--subitem">
           {{ subitem.text | translate }}
       </md-button>
     </div>
