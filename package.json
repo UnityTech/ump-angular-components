@@ -10,9 +10,9 @@
   },
   "author": "Maciej Gurban <maciej@unity3d.com>",
   "license": "MIT",
-  "dependencies": {
-    "angular": "1.6.7",
-    "angular-material": "1.1.5"
+  "peerDependencies": {
+    "angular": "~1.6.0",
+    "angular-material": "~1.1.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
