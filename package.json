@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepublish:basics": "cp package.json README.md ./build",
+    "prepublish:build": "npm run build && npm run prepublish:basics",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "build": "rm -rf build/* && rm -rf node_modules/.cache/babel-loader && webpack --config webpack.prod.js"
+    "build": "npm run build:cleanup && webpack --config webpack.prod.js",
+    "build:cleanup": "rm -rf build/* node_modules/.cache/babel-loader"
   },
   "author": "Maciej Gurban <maciej@unity3d.com>",
   "license": "MIT",
