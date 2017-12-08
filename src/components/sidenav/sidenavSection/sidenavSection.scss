@@ -3,6 +3,7 @@
 
 .ump-sidenav--heading {
   @include sidenav-item-base();
+
   border-left: 3px solid transparent;
 
   &:hover {

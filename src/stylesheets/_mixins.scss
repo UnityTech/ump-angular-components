@@ -10,6 +10,7 @@
 
 @mixin sidenav-item-base() {
   align-items: center;
+  box-sizing: border-box;
   color: $color-font;
   cursor: pointer;
   display: flex;
