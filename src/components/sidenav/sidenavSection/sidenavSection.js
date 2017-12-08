@@ -5,7 +5,9 @@ export default class SidenavSection {
     this.$mdSidenav = $mdSidenav;
     this.$state = $state;
     this.$window = $window;
+  }
 
+  $onInit() {
     if (this.item.menu) {
       this.isOpen = this.isMenuItemActive(this.item.menu);
     }
