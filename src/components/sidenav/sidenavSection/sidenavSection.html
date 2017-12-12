@@ -17,7 +17,7 @@
     <md-button
       ng-if="$ctrl.item.href"
       ng-href="{{ $ctrl.item.href }}"
-      ng-class="{ 'active': $ctrl.isActive($ctrl.item.href) }"
+      ng-class="{ 'active': $ctrl.isActiveUrl($ctrl.item.href) }"
       class="ump-sidenav--heading">
         <md-icon md-font-set="{{ $ctrl.item.iconFamily || md }}">
           {{ $ctrl.item.icon || 'view_module' }}
@@ -58,7 +58,7 @@
         ng-if="subitem.href"
         ng-click="$ctrl.closeSidenav()"
         ng-href="{{ subitem.href }}"
-        ng-class="{ 'active': $ctrl.isActive(subitem.href) }"
+        ng-class="{ 'active': $ctrl.isActiveUrl(subitem.href) }"
         class="ump-sidenav--subitem">
           {{ subitem.text | translate }}
       </md-button>

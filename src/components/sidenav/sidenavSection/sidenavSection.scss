@@ -17,6 +17,12 @@
     margin: 0 20px;
   }
 
+  &.active {
+    font-weight: 500;
+    color: $color-primary;
+    border-left-color: $color-primary;
+  }
+
   .ump-sidenav--section-toggle {
     margin-left: auto;
     margin-right: 20px;
