@@ -5,12 +5,13 @@
   "main": "src/app.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --progress --bail --config webpack.dev.js",
+    "start": "webpack-dev-server --progress --bail --https --config webpack.dev.js",
     "build:release": "RELEASE=true npm run build",
     "lint": "eslint -c .eslintrc --no-eslintrc ./src"
   },
   "dependencies": {
     "@uirouter/angularjs": "1.0.6",
+    "@unity-ads/ump-angular-components": "1.0.5",
     "angular": "1.6.6",
     "angular-animate": "1.6.6",
     "angular-aria": "1.6.6",
