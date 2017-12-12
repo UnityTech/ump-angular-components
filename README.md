@@ -52,6 +52,8 @@ npm install
 npm start
 ```
 
+The app will run at `https://localhost:8888`.
+
 ## Publishing to NPM
 
 To achieve a flat file structure without complicated scripting, we don't leverage `npm prepublish`, which is automatically executed every time `npm publish` is run. This means the process for releasing new versions requires that we:
