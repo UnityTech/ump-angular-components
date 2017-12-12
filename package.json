@@ -17,6 +17,21 @@
     "angular": "~1.6.0",
     "angular-material": "~1.1.0"
   },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "safari >= 7"
+            ]
+          }
+        }
+      ]
+    ]
+  },
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",

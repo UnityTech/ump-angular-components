@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb-base",
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.dev.js"
+      }
+    }
+  },
+  "env": {
+    "browser": true
+  },
+  "globals": {},
+  "rules": {}
+}
