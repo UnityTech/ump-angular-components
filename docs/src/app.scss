@@ -1,0 +1,71 @@
+@import "../node_modules/@unity-ads/ump-angular-components/sidenav.css";
+
+$color-primary: #1D9AD6;
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
+// Styles
+.app {
+  display: flex;
+}
+
+.app-name {
+  cursor: cursor;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: lighten($color-primary, 20%);
+  margin: 30px 20px 30px;
+}
+
+.component-nav {
+  box-sizing: border-box;
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 250px;
+  background: #364554;
+
+  .component-heading {
+    color: rgba(255, 255, 255, 0.94);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 10px 20px;
+  }
+
+  .component-link {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    padding: 10px 40px;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    &.active {
+      background: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .component-name {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .component-subtext {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+    margin-top: 2px;
+  }
+}
+
+.component-content {
+  background: rgb(250, 250, 250);
+  color: #444;
+  flex: 1;
+}
