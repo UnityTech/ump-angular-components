@@ -22,7 +22,7 @@ module.exports = {
   },
   output: {
     filename: '[name].[hash:8].js',
-    publicPath: '/',
+    publicPath: isRelease ? '/ump-angular-components' : '/',
     path: paths.dist,
   },
   module: {
