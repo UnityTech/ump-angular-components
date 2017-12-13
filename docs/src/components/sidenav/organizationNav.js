@@ -12,11 +12,13 @@ class OrganizationNav {
   }
 
   $onInit() {
+    const barLink = `https://${this.currentDomain}/ump-angular-components/sidenav/organization/bar`;
+
     this.items = [{
       text: 'organizationNav.foonbar',
       menu: [
         { text: 'organizationNav.foo', sref: 'app.sidenav.organization.foo' },
-        { text: 'organizationNav.bar', href: `https://${this.currentDomain}/sidenav/organization/bar` },
+        { text: 'organizationNav.bar', href: barLink },
       ],
     }, {
       text: 'organizationNav.google',
