@@ -18235,7 +18235,8 @@ md-toolbar {
   box-sizing: border-box;
   background: #F2F3F4;
   padding-top: 20px;
-  width: 250px; }html, body {
+  width: 250px;
+  height: 100%; }html, body {
   font-family: 'Roboto', sans-serif; }
 
 .app {
@@ -18285,4 +18286,4 @@ md-toolbar {
   color: #444;
   flex: 1; }
 
-/*# sourceMappingURL=styles.bf5259878274e335ecd44f05ff025f04.css.map*/
+/*# sourceMappingURL=styles.d1140e7c4034b0b7f0482582fa40857a.css.map*/
