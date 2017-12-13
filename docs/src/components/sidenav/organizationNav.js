@@ -5,22 +5,16 @@ import ngTranslate from 'angular-translate';
 import umpSidenav from '@unity-ads/ump-angular-components/sidenav';
 
 class OrganizationNav {
-  constructor($window) {
-    'ngInject';
-
-    this.currentDomain = $window.location.host;
-  }
-
   $onInit() {
-    const barLink = `https://${this.currentDomain}/ump-angular-components/sidenav/organization/bar`;
-
     this.items = [{
+      icon: 'language',
       text: 'organizationNav.foonbar',
       menu: [
         { text: 'organizationNav.foo', sref: 'app.sidenav.organization.foo' },
-        { text: 'organizationNav.bar', href: barLink },
+        { text: 'organizationNav.bar', sref: 'app.sidenav.organization.bar' },
       ],
     }, {
+      icon: 'apps',
       text: 'organizationNav.google',
       href: 'https://google.com',
     }];
