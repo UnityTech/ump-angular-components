@@ -43,16 +43,22 @@ Build the project
 npm run build
 ```
 
-## Component demos & usage examples
+## Documentation website
 
-Before we host documentation website somewhere, you'll need to run it locally. To do so, clone this repository and run:
+Navigate to `./docs` and run `npm install`.
+
+Start development server at https://localhost:8888
+
 ```
-cd docs
-npm install
 npm start
 ```
 
-The app will run at `https://localhost:8888`.
+Build and deploy the website
+
+```
+npm run build:relase
+npm run deploy
+```
 
 ## Publishing to NPM
 
