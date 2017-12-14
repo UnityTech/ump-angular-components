@@ -11,7 +11,7 @@
     "deploy": "node deploy.js"
   },
   "dependencies": {
-    "@uirouter/angularjs": "1.0.6",
+    "@uirouter/angularjs": "1.0.7",
     "@unity-ads/ump-angular-components": "1.0.6",
     "angular": "1.6.6",
     "angular-animate": "1.6.6",

@@ -7,7 +7,7 @@
   <md-menu-content>
     <md-menu-item ng-value="project" ng-repeat="project in $ctrl.projectList">
       <md-button ng-click="$ctrl.onSelect({ project })">
-        {{ project.name }}
+        <span class="ump-sidenav--project-name">{{ project.name }}</span>
       </md-button>
     </md-menu-item>
  </md-menu-content>
