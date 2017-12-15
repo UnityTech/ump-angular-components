@@ -1,3 +1,102 @@
+.ump-sidenav--back {
+  font-size: 16px;
+  height: 16px;
+  min-height: 16px;
+  width: 16px;
+  min-width: 16px;
+  border: 2px solid #777;
+  border-radius: 16px;
+  color: #777;
+  cursor: pointer;
+  margin-left: 23px;
+  opacity: 0.8; }
+  .ump-sidenav--back:hover {
+    opacity: 1; }
+  .ump-sidenav--back .material-icons {
+    font-size: inherit; }
+.ump-sidenav--heading {
+  align-items: center;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  text-transform: initial;
+  width: 100%;
+  border-left: 3px solid transparent; }
+  .ump-sidenav--heading:hover {
+    background: #E2E2E3; }
+  .ump-sidenav--heading md-icon {
+    font-size: 16px;
+    height: 16px;
+    min-height: 16px;
+    width: 16px;
+    min-width: 16px;
+    color: rgba(0, 0, 0, 0.54);
+    margin: 0 20px; }
+  .ump-sidenav--heading.active {
+    font-weight: 500;
+    color: #1D9AD6;
+    border-left-color: #1D9AD6; }
+  .ump-sidenav--heading .ump-sidenav--section-toggle {
+    margin-left: auto;
+    margin-right: 20px; }
+
+.ump-sidenav--submenu {
+  height: 0;
+  overflow: hidden; }
+  .ump-sidenav--submenu.isOpen {
+    height: 100%; }
+
+.ump-sidenav--subitem {
+  align-items: center;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  text-transform: initial;
+  width: 100%;
+  border-left: 3px solid transparent;
+  padding-left: 70px; }
+  .ump-sidenav--subitem.active {
+    font-weight: 500;
+    color: #1D9AD6;
+    border-left-color: #1D9AD6; }
+.ump-sidenav--project-list {
+  display: block;
+  margin: 10px 0; }
+
+.ump-sidenav--project-item {
+  display: flex;
+  font-weight: 500;
+  height: 48px;
+  margin: 0;
+  padding-left: 23px;
+  text-align: left;
+  text-transform: initial;
+  width: 100%; }
+  .ump-sidenav--project-item .ump-sidenav--project-name {
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .ump-sidenav--project-item md-icon {
+    font-size: 16px;
+    margin: 10px 0 0 3px; }
+.ump-sidenav {
+  box-sizing: border-box;
+  background: #F2F3F4;
+  padding-top: 20px;
+  width: 250px;
+  height: 100%; }
 /*!
  * AngularJS Material Design
  * https://github.com/angular/material
@@ -18286,4 +18385,4 @@ md-toolbar {
   color: #444;
   flex: 1; }
 
-/*# sourceMappingURL=styles.d1140e7c4034b0b7f0482582fa40857a.css.map*/
+/*# sourceMappingURL=styles.a8177fdd.css.map*/
