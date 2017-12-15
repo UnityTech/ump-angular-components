@@ -1,4 +1,7 @@
-@import "../node_modules/@unity-ads/ump-angular-components/sidenav.css";
+@import "../../src/components/sidenav/sidenavBackButton/sidenavBackButton.scss";
+@import "../../src/components/sidenav/sidenavDropdown/sidenavDropdown.scss";
+@import "../../src/components/sidenav/sidenavMenu/sidenavMenu.scss";
+@import "../../src/components/sidenav/sidenavSection/sidenavSection.scss";
 
 $color-primary: #1D9AD6;
 

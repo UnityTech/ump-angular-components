@@ -27,16 +27,12 @@ angular.module('myApp', [
 ])
 ```
 
-Here's a real-life [example ](https://github.com/UnityTech/ump-angular-components/blob/master/docs/src/components/sidenav/organizationNav.js).
-
 **Importing CSS**
 
 ```
 /* In your app.scss. The path to node_modules might differ */
 @import "../../node_modules/@unity-ads/ump-angular-components/sidenav.css"
 ```
-
-Here's a real-life [example ](https://github.com/UnityTech/ump-angular-components/blob/master/docs/src/app.scss).
 
 Build the project
 ```
@@ -53,10 +49,11 @@ Start development server at https://localhost:8888
 npm start
 ```
 
-Build and deploy the website
+Documentation website is also used for ongoing feature development of library components. When documentation app is run locally, changes to files in root `./src` will be reflected in the browser.
 
+Build and deploy the website
 ```
-npm run build:relase
+npm run build
 npm run deploy
 ```
 

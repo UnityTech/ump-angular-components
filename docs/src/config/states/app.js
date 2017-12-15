@@ -1,6 +1,6 @@
 export default [{
   name: 'app',
-  url: '/ump-angular-components',
+  url: '',
   component: 'abpApp',
 }, {
   name: 'app.sidenav',

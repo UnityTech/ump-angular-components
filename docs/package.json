@@ -4,9 +4,8 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --progress --bail --https --config webpack.dev.js",
-    "build:release": "rm -rf dist/* && RELEASE=true npm run build",
+    "build": "rm -rf dist/* && RELEASE=true webpack --config webpack.prod.js",
     "lint": "eslint -c .eslintrc --no-eslintrc ./src",
     "deploy": "node deploy.js"
   },

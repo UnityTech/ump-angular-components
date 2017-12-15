@@ -1,12 +1,9 @@
 const webpackMerge = require('webpack-merge');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const common = require('./webpack.common');
+const fileImports = require('./webpack/file-imports.js');
 
 const production = {
   devtool: 'source-map',
-  plugins: [
-    new ExtractTextPlugin('[name].css'),
-  ],
 };
 
-module.exports = webpackMerge(common, production);
+module.exports = webpackMerge(common, fileImports, production);

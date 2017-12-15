@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const merge = require('webpack-merge');
 const path = require('path');
 
+const fileImports = require('../webpack/file-imports.js');
 const common = require('./webpack.common');
 
 const development = {
@@ -19,4 +20,4 @@ const development = {
   ],
 };
 
-module.exports = merge(common, development);
+module.exports = merge(common, fileImports, development);

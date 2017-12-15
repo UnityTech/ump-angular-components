@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 
+const fileImports = require('../webpack/file-imports.js');
 const common = require('./webpack.common');
 
 const production = {
@@ -17,4 +18,4 @@ const production = {
   ],
 };
 
-module.exports = merge(common, production);
+module.exports = merge(common, fileImports, production);

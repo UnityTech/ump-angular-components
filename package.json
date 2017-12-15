@@ -8,24 +8,32 @@
     "prepublish:build": "npm run build && npm run prepublish:basics",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "build": "npm run build:cleanup && webpack --config webpack.prod.js",
+    "build": "npm run build:cleanup && RELEASE=true webpack --config webpack.prod.js",
     "build:cleanup": "rm -rf build/* node_modules/.cache/babel-loader"
   },
   "author": "Maciej Gurban <maciej@unity3d.com>",
   "license": "MIT",
+  "dependencies": {
+    "angular": "~1.6.0",
+    "angular-animate": "~1.6.0",
+    "angular-aria": "~1.6.0",
+    "angular-material": "~1.1.0"
+  },
   "peerDependencies": {
     "angular": "~1.6.0",
+    "angular-animate": "~1.6.0",
+    "angular-aria": "~1.6.0",
     "angular-material": "~1.1.0"
   },
   "babel": {
     "presets": [
       [
-        "env",
+        "airbnb",
         {
           "targets": {
             "browsers": [
               "last 2 versions",
-              "safari >= 7"
+              "safari >= 9"
             ]
           }
         }
@@ -56,20 +64,5 @@
     "webpack": "3.9.1",
     "webpack-dev-server": "2.9.5",
     "webpack-merge": "4.1.1"
-  },
-  "babel": {
-    "presets": [
-      [
-        "airbnb",
-        {
-          "targets": {
-            "browsers": [
-              "last 2 versions",
-              "safari >= 9"
-            ]
-          }
-        }
-      ]
-    ]
   }
 }

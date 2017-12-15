@@ -10,7 +10,7 @@ export default angular
   .config(($stateProvider, $urlRouterProvider, $locationProvider) => {
     'ngInject';
 
-    $locationProvider.html5Mode(true).hashPrefix('!');
+    $locationProvider.html5Mode(false).hashPrefix('!');
 
     $urlRouterProvider.otherwise(states[0].url);
 

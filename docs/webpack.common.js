@@ -5,8 +5,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const isRelease = process.env.RELEASE;
 
+const publicPath = isRelease ? '/ump-angular-components' : '/';
+
 const paths = {
   appFile: path.resolve(__dirname, './src/app.js'),
+  libSrc: path.resolve(__dirname, '../src'),
   src: path.resolve(__dirname, './src'),
   dist: path.resolve(__dirname, './dist'),
 };
@@ -15,6 +18,7 @@ module.exports = {
   resolve: {
     alias: {
       src: paths.src,
+      libSrc: paths.libSrc,
     },
   },
   entry: {
@@ -22,60 +26,14 @@ module.exports = {
   },
   output: {
     filename: '[name].[hash:8].js',
-    publicPath: isRelease ? '/ump-angular-components' : '/',
+    publicPath,
     path: paths.dist,
-  },
-  module: {
-    rules: [
-      {
-        test: /\.html$/,
-        use: [{ loader: 'html-loader' }],
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [{ loader: 'babel-loader' }],
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [{ loader: 'eslint-loader' }],
-        enforce: 'pre',
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [{ loader: 'ng-annotate-loader' }],
-        enforce: 'post',
-      },
-      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader'],
-        }),
-      },
-      {
-        test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader'],
-        }),
-      },
-    ],
   },
   plugins: [
     // Injects script tags in your index.html
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       inject: 'body',
-    }),
-
-    // Extract styles to their own files
-    new ExtractTextPlugin({
-      filename: 'styles.[contenthash].css',
-      disable: !isRelease,
-      allChunks: true,
     }),
   ],
 };

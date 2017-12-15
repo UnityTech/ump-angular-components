@@ -2,7 +2,8 @@ import angular from 'angular';
 import uiRouter from '@uirouter/angularjs';
 import ngTranslate from 'angular-translate';
 
-import umpSidenav from '@unity-ads/ump-angular-components/sidenav';
+import umpSidenav from 'libSrc/components/sidenav';
+// import 'libSrc/components/sidenav/sidenavSection/sidenavSection.scss';
 
 class OrganizationNav {
   $onInit() {
