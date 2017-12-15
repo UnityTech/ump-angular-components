@@ -18253,6 +18253,35 @@ md-toolbar {
     opacity: 1; }
   .ump-sidenav--back .material-icons {
     font-size: inherit; }
+
+.ump-sidenav--project-list {
+  display: block;
+  margin: 10px 0; }
+
+.ump-sidenav--project-item {
+  display: flex;
+  font-weight: 500;
+  height: 48px;
+  margin: 0;
+  padding-left: 23px;
+  text-align: left;
+  text-transform: initial;
+  width: 100%; }
+  .ump-sidenav--project-item .ump-sidenav--project-name {
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .ump-sidenav--project-item md-icon {
+    font-size: 16px;
+    margin: 10px 0 0 3px; }
+
+.ump-sidenav {
+  box-sizing: border-box;
+  background: #F2F3F4;
+  padding-top: 20px;
+  width: 250px;
+  height: 100%; }
+
 .ump-sidenav--heading {
   align-items: center;
   box-sizing: border-box;
@@ -18310,32 +18339,8 @@ md-toolbar {
     font-weight: 500;
     color: #1D9AD6;
     border-left-color: #1D9AD6; }
-.ump-sidenav--project-list {
-  display: block;
-  margin: 10px 0; }
 
-.ump-sidenav--project-item {
-  display: flex;
-  font-weight: 500;
-  height: 48px;
-  margin: 0;
-  padding-left: 23px;
-  text-align: left;
-  text-transform: initial;
-  width: 100%; }
-  .ump-sidenav--project-item span {
-    font-size: 18px;
-    overflow: hidden;
-    text-overflow: ellipsis; }
-  .ump-sidenav--project-item md-icon {
-    font-size: 16px;
-    margin: 10px 0 0 3px; }
-.ump-sidenav {
-  box-sizing: border-box;
-  background: #F2F3F4;
-  padding-top: 20px;
-  width: 250px;
-  height: 100%; }html, body {
+html, body {
   font-family: 'Roboto', sans-serif; }
 
 .app {
@@ -18385,4 +18390,4 @@ md-toolbar {
   color: #444;
   flex: 1; }
 
-/*# sourceMappingURL=styles.a8177fdd.css.map*/
+/*# sourceMappingURL=styles.6fd729e5.css.map*/
