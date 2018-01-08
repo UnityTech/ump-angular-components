@@ -21,6 +21,10 @@
     font-weight: 500;
     color: $color-primary;
     border-left-color: $color-primary;
+
+    md-icon {
+      color: $color-primary;
+    }
   }
 
   .ump-sidenav--section-toggle {
