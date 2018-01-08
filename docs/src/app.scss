@@ -11,7 +11,6 @@ html, body {
 
 // Styles
 .app {
-  display: flex;
 }
 
 .app-name {
@@ -27,8 +26,7 @@ html, body {
 .component-nav {
   box-sizing: border-box;
   height: 100vh;
-  overflow-x: auto;
-  overflow-y: hidden;
+  position: fixed;
   width: 250px;
   background: #364554;
 
@@ -71,4 +69,13 @@ html, body {
   background: rgb(250, 250, 250);
   color: #444;
   flex: 1;
+  padding-left: 250px;
+}
+
+.preview {
+  display: flex;
+}
+
+.preview-description {
+  padding: 20px;
 }

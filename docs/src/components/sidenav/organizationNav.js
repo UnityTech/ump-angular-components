@@ -6,6 +6,10 @@ import umpSidenav from 'libSrc/components/sidenav';
 // import 'libSrc/components/sidenav/sidenavSection/sidenavSection.scss';
 
 class OrganizationNav {
+  constructor($mdSidenav) {
+    this.$mdSidenav = $mdSidenav;
+  }
+
   $onInit() {
     this.items = [{
       icon: 'language',
@@ -19,6 +23,10 @@ class OrganizationNav {
       text: 'organizationNav.google',
       href: 'https://google.com',
     }];
+  }
+
+  openMenu() {
+    this.$mdSidenav('sideNav').toggle();
   }
 }
 
@@ -63,6 +71,14 @@ export default angular
   .component('organizationNav', {
     controller: OrganizationNav,
     template: `
+      <div class="preview-description">
+        <p>Resize the window to see how the component behaves in lower screen resolutions.</p>
+
+        <div hide-gt-xs>
+          <a ng-click="$ctrl.openMenu();">Show menu</a>
+        </div>
+      </div>
+
       <ump-sidenav-menu>
         <ump-sidenav-section ng-repeat="item in $ctrl.items" item="item">
         </ump-sidenav-section>
