@@ -42,6 +42,10 @@ class ProjectNav {
   selectProject(project) {
     this.selectedProject = project;
   }
+
+  openMenu() {
+    this.$mdSidenav('sideNav').toggle();
+  }
 }
 
 export default angular
