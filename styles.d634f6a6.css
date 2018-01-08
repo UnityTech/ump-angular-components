@@ -18343,9 +18343,6 @@ md-toolbar {
 html, body {
   font-family: 'Roboto', sans-serif; }
 
-.app {
-  display: flex; }
-
 .app-name {
   cursor: cursor;
   text-transform: uppercase;
@@ -18358,8 +18355,7 @@ html, body {
 .component-nav {
   box-sizing: border-box;
   height: 100vh;
-  overflow-x: auto;
-  overflow-y: hidden;
+  position: fixed;
   width: 250px;
   background: #364554; }
   .component-nav .component-heading {
@@ -18388,6 +18384,13 @@ html, body {
 .component-content {
   background: #fafafa;
   color: #444;
-  flex: 1; }
+  flex: 1;
+  padding-left: 250px; }
 
-/*# sourceMappingURL=styles.6fd729e5.css.map*/
+.preview {
+  display: flex; }
+
+.preview-description {
+  padding: 20px; }
+
+/*# sourceMappingURL=styles.d634f6a6.css.map*/
