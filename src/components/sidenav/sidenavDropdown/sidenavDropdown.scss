@@ -15,14 +15,14 @@
   text-transform: initial;
   width: 100%;
 
-  .ump-sidenav--project-name {
-    font-size: 18px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
   md-icon {
     font-size: 16px;
     margin: 10px 0 0 3px;
   }
+}
+
+.ump-sidenav--project-name {
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
