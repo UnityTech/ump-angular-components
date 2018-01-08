@@ -42,6 +42,8 @@
     font-weight: 500;
     color: #1D9AD6;
     border-left-color: #1D9AD6; }
+    .ump-sidenav--heading.active md-icon {
+      color: #1D9AD6; }
   .ump-sidenav--heading .ump-sidenav--section-toggle {
     margin-left: auto;
     margin-right: 20px; }
@@ -84,13 +86,14 @@
   text-align: left;
   text-transform: initial;
   width: 100%; }
-  .ump-sidenav--project-item .ump-sidenav--project-name {
-    font-size: 18px;
-    overflow: hidden;
-    text-overflow: ellipsis; }
   .ump-sidenav--project-item md-icon {
     font-size: 16px;
     margin: 10px 0 0 3px; }
+
+.ump-sidenav--project-name {
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 .ump-sidenav {
   box-sizing: border-box;
   background: #F2F3F4;
@@ -18267,13 +18270,14 @@ md-toolbar {
   text-align: left;
   text-transform: initial;
   width: 100%; }
-  .ump-sidenav--project-item .ump-sidenav--project-name {
-    font-size: 18px;
-    overflow: hidden;
-    text-overflow: ellipsis; }
   .ump-sidenav--project-item md-icon {
     font-size: 16px;
     margin: 10px 0 0 3px; }
+
+.ump-sidenav--project-name {
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .ump-sidenav {
   box-sizing: border-box;
@@ -18310,6 +18314,8 @@ md-toolbar {
     font-weight: 500;
     color: #1D9AD6;
     border-left-color: #1D9AD6; }
+    .ump-sidenav--heading.active md-icon {
+      color: #1D9AD6; }
   .ump-sidenav--heading .ump-sidenav--section-toggle {
     margin-left: auto;
     margin-right: 20px; }
@@ -18393,4 +18399,4 @@ html, body {
 .preview-description {
   padding: 20px; }
 
-/*# sourceMappingURL=styles.d634f6a6.css.map*/
+/*# sourceMappingURL=styles.300b4714.css.map*/
