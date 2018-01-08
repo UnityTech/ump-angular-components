@@ -15,8 +15,8 @@ class OrganizationNav {
       icon: 'language',
       text: 'organizationNav.foonbar',
       menu: [
-        { text: 'organizationNav.foo', sref: 'app.sidenav.organization.foo' },
-        { text: 'organizationNav.bar', sref: 'app.sidenav.organization.bar' },
+        { text: 'organizationNav.foo', sref: 'app.organizationNav.foo' },
+        { text: 'organizationNav.bar', sref: 'app.organizationNav.bar' },
       ],
     }, {
       icon: 'apps',
@@ -40,13 +40,14 @@ export default angular
     'ngInject';
 
     const states = [{
-      name: 'app.sidenav.organization',
+      name: 'app.organizationNav',
       url: '/organization',
+      component: 'organizationNav',
     }, {
-      name: 'app.sidenav.organization.foo',
+      name: 'app.organizationNav.foo',
       url: '/foo',
     }, {
-      name: 'app.sidenav.organization.bar',
+      name: 'app.organizationNav.bar',
       url: '/bar',
     }];
 

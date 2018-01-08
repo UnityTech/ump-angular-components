@@ -5,7 +5,8 @@ const nav = [
   {
     heading: 'Sidenav',
     components: [
-      { sref: 'app.sidenav.organization', name: 'Organization level', sub: 'Basics & localization' },
+      { sref: 'app.organizationNav', name: 'Organization level', sub: 'Basics & localization' },
+      { sref: 'app.projectNav', name: 'Project level', sub: 'Dropdown & back button' },
     ],
   },
 ];
