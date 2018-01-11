@@ -21,6 +21,8 @@
     font-weight: 500;
     color: $color-primary;
     border-left-color: $color-primary;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 
     md-icon {
       color: $color-primary;
@@ -52,5 +54,7 @@
     font-weight: 500;
     color: $color-primary;
     border-left-color: $color-primary;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }
