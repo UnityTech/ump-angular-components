@@ -6,6 +6,8 @@ import umpSidenav from 'libSrc/components/sidenav';
 
 class ProjectNav {
   constructor($mdSidenav) {
+    'ngInject';
+
     this.$mdSidenav = $mdSidenav;
   }
 
