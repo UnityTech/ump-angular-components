@@ -13,6 +13,7 @@
 .ump-sidenav--heading {
   align-items: center;
   box-sizing: border-box;
+  border-radius: 0;
   color: rgba(0, 0, 0, 0.87);
   cursor: pointer;
   display: flex;
@@ -53,6 +54,7 @@
 .ump-sidenav--subitem {
   align-items: center;
   box-sizing: border-box;
+  border-radius: 0;
   color: rgba(0, 0, 0, 0.87);
   cursor: pointer;
   display: flex;
@@ -18281,6 +18283,7 @@ md-toolbar {
 .ump-sidenav--heading {
   align-items: center;
   box-sizing: border-box;
+  border-radius: 0;
   color: rgba(0, 0, 0, 0.87);
   cursor: pointer;
   display: flex;
@@ -18321,6 +18324,7 @@ md-toolbar {
 .ump-sidenav--subitem {
   align-items: center;
   box-sizing: border-box;
+  border-radius: 0;
   color: rgba(0, 0, 0, 0.87);
   cursor: pointer;
   display: flex;
@@ -18391,4 +18395,4 @@ html, body {
 .preview-description {
   padding: 20px; }
 
-/*# sourceMappingURL=styles.c2f9c5cf.css.map*/
+/*# sourceMappingURL=app.css.map*/
