@@ -46,6 +46,10 @@ module.exports = {
     ],
   },
   plugins: [
-    new ExtractTextPlugin('[name].css'),
+    new ExtractTextPlugin({
+      filename: '[name].css',
+      disable: !isRelease,
+      allChunks: true,
+    }),
   ],
 };
