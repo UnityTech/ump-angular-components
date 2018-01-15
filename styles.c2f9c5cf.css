@@ -4,15 +4,11 @@
   min-height: 16px;
   width: 16px;
   min-width: 16px;
-  border: 2px solid #777;
-  border-radius: 16px;
-  color: #777;
+  color: rgba(0, 0, 0, 0.54);
   cursor: pointer;
-  margin-left: 23px;
-  opacity: 0.8; }
-  .ump-sidenav--back:hover {
-    opacity: 1; }
+  margin-left: 23px; }
   .ump-sidenav--back .material-icons {
+    font-size: 16px;
     font-size: inherit; }
 .ump-sidenav--heading {
   align-items: center;
@@ -27,7 +23,7 @@
   margin: 0;
   text-transform: initial;
   width: 100%;
-  border-left: 3px solid transparent; }
+  border-left: 2px solid transparent; }
   .ump-sidenav--heading:hover {
     background: #E2E2E3; }
   .ump-sidenav--heading md-icon {
@@ -67,7 +63,7 @@
   margin: 0;
   text-transform: initial;
   width: 100%;
-  border-left: 3px solid transparent;
+  border-left: 2px solid transparent;
   padding-left: 70px; }
   .ump-sidenav--subitem.active {
     font-weight: 500;
@@ -87,7 +83,7 @@
   text-transform: initial;
   width: 100%; }
   .ump-sidenav--project-item md-icon {
-    font-size: 16px;
+    font-size: 12px;
     margin: 10px 0 0 3px; }
 
 .ump-sidenav--project-name {
@@ -97,7 +93,7 @@
 .ump-sidenav {
   box-sizing: border-box;
   background: #F2F3F4;
-  padding-top: 20px;
+  padding-top: 36px;
   width: 250px;
   height: 100%; }
 /*!
@@ -18246,15 +18242,11 @@ md-toolbar {
   min-height: 16px;
   width: 16px;
   min-width: 16px;
-  border: 2px solid #777;
-  border-radius: 16px;
-  color: #777;
+  color: rgba(0, 0, 0, 0.54);
   cursor: pointer;
-  margin-left: 23px;
-  opacity: 0.8; }
-  .ump-sidenav--back:hover {
-    opacity: 1; }
+  margin-left: 23px; }
   .ump-sidenav--back .material-icons {
+    font-size: 16px;
     font-size: inherit; }
 
 .ump-sidenav--project-list {
@@ -18271,7 +18263,7 @@ md-toolbar {
   text-transform: initial;
   width: 100%; }
   .ump-sidenav--project-item md-icon {
-    font-size: 16px;
+    font-size: 12px;
     margin: 10px 0 0 3px; }
 
 .ump-sidenav--project-name {
@@ -18282,7 +18274,7 @@ md-toolbar {
 .ump-sidenav {
   box-sizing: border-box;
   background: #F2F3F4;
-  padding-top: 20px;
+  padding-top: 36px;
   width: 250px;
   height: 100%; }
 
@@ -18299,7 +18291,7 @@ md-toolbar {
   margin: 0;
   text-transform: initial;
   width: 100%;
-  border-left: 3px solid transparent; }
+  border-left: 2px solid transparent; }
   .ump-sidenav--heading:hover {
     background: #E2E2E3; }
   .ump-sidenav--heading md-icon {
@@ -18339,7 +18331,7 @@ md-toolbar {
   margin: 0;
   text-transform: initial;
   width: 100%;
-  border-left: 3px solid transparent;
+  border-left: 2px solid transparent;
   padding-left: 70px; }
   .ump-sidenav--subitem.active {
     font-weight: 500;
@@ -18399,4 +18391,4 @@ html, body {
 .preview-description {
   padding: 20px; }
 
-/*# sourceMappingURL=styles.300b4714.css.map*/
+/*# sourceMappingURL=styles.c2f9c5cf.css.map*/
