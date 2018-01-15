@@ -46,10 +46,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new ExtractTextPlugin({
-      filename: 'styles.[contenthash:8].css',
-      disable: !isRelease,
-      allChunks: true,
-    }),
+    new ExtractTextPlugin('[name].css'),
   ],
 };
