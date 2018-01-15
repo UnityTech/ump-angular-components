@@ -4,7 +4,7 @@
 .ump-sidenav--heading {
   @include sidenav-item-base();
 
-  border-left: 3px solid transparent;
+  border-left: 2px solid transparent;
 
   &:hover {
     background: $side-item-focus-bg;
@@ -45,7 +45,7 @@
 .ump-sidenav--subitem {
   @include sidenav-item-base();
 
-  border-left: 3px solid transparent;
+  border-left: 2px solid transparent;
   padding-left: 70px;
 
   &.active {

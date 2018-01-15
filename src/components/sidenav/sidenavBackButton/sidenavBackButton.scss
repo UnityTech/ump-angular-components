@@ -1,24 +1,18 @@
 @import '../../../stylesheets/mixins';
 
-$button-color: #777;
+$button-color: rgba(0,0,0, 0.54);
 $button-color-focus: #333;
 $button-size: 16px;
 
 .ump-sidenav--back {
   @include icon-size($button-size);
 
-  border: 2px solid $button-color;
-  border-radius: $button-size;
   color: $button-color;
   cursor: pointer;
   margin-left: $side-item-left-space;
-  opacity: 0.8;
-
-  &:hover {
-    opacity: 1;
-  }
 
   .material-icons {
+    font-size: 16px;
     font-size: inherit;
   }
 }
