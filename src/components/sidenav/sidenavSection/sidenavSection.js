@@ -26,7 +26,7 @@ export default class SidenavSection {
   }
 
   isActiveState(sref) {
-    return this.$state.current.name === sref;
+    return this.$state.includes(sref);
   }
 
   isMenuItemActive(items) {
