@@ -18,7 +18,7 @@ class OrganizationNav {
       text: 'organizationNav.foonbar',
       menu: [
         { text: 'organizationNav.foo', sref: 'app.organizationNav.foo' },
-        { text: 'organizationNav.bar', sref: 'app.organizationNav.bar' },
+        { text: 'organizationNav.baz', sref: 'app.organizationNav.bar.baz' },
       ],
     }, {
       icon: 'apps',
@@ -51,6 +51,9 @@ export default angular
     }, {
       name: 'app.organizationNav.bar',
       url: '/bar',
+    }, {
+      name: 'app.organizationNav.bar.baz',
+      url: '/baz',
     }];
 
     states.forEach((state) => {
@@ -65,7 +68,7 @@ export default angular
         organizationNav: {
           foonbar: 'Foo & Bar',
           foo: 'Foo',
-          bar: 'Bar',
+          baz: 'Baz',
           google: 'Google.com',
         },
       })
