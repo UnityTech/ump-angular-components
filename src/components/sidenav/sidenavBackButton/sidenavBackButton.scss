@@ -6,7 +6,7 @@ $button-size: 16px;
 
 .ump-sidenav--back {
   display: flex;
-  min-height: 32px;
+  height: 32px;
   align-items: center;
   margin-left: $side-item-left-space;
   cursor: pointer;
@@ -19,7 +19,7 @@ $button-size: 16px;
     font-size: 16px;
     font-size: inherit;
   }
-  .back-text {
+  .button-text {
     margin-left: 12px;
   }
 }

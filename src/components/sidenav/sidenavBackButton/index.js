@@ -13,6 +13,7 @@ export default angular
   .component('umpSidenavBackButton', {
     bindings: {
       onClick: '&',
+      buttonText: '@',
     },
     template,
   })
