@@ -5,14 +5,21 @@ $button-color-focus: #333;
 $button-size: 16px;
 
 .ump-sidenav--back {
-  @include icon-size($button-size);
-
-  color: $button-color;
-  cursor: pointer;
+  display: flex;
+  height: 32px;
+  align-items: center;
   margin-left: $side-item-left-space;
-
+  cursor: pointer;
+  color: $button-color;
+  md-icon {
+    @include icon-size($button-size);
+    margin: 0;
+  }
   .material-icons {
     font-size: 16px;
     font-size: inherit;
+  }
+  .button-text {
+    margin-left: 12px;
   }
 }
