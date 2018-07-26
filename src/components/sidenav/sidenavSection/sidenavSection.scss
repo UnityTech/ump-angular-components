@@ -5,6 +5,7 @@
   @include sidenav-item-base();
 
   border-left: 2px solid transparent;
+  transition: background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 
   &:hover {
     background: $side-item-focus-bg;
@@ -30,6 +31,11 @@
   .ump-sidenav--section-toggle {
     margin-left: auto;
     margin-right: 20px;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    &.isOpen {
+      transform: rotate(-90deg);
+    }
   }
 }
 
