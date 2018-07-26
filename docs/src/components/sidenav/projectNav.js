@@ -88,6 +88,7 @@ export default angular
 
       <ump-sidenav-menu>
         <ump-sidenav-back-button
+          button-text="All projects"
           on-click="$ctrl.onBackClick()">
         </ump-sidenav-back-button>
 
