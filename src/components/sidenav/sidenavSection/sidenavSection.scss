@@ -5,6 +5,7 @@
   @include sidenav-item-base();
 
   border-left: 2px solid transparent;
+  transition: background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 
   &:hover {
     background: $side-item-focus-bg;
@@ -14,7 +15,7 @@
     @include icon-size(16px);
 
     color: rgba(0, 0, 0, 0.54);
-    margin: 0 20px;
+    margin: 0 20px 0 18px;
   }
 
   &.active {
@@ -30,6 +31,11 @@
   .ump-sidenav--section-toggle {
     margin-left: auto;
     margin-right: 20px;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    &.isOpen {
+      transform: rotate(-90deg);
+    }
   }
 }
 
@@ -46,7 +52,7 @@
   @include sidenav-item-base();
 
   border-left: 2px solid transparent;
-  padding-left: 70px;
+  padding-left: 72px;
 
   &.active {
     font-weight: 500;

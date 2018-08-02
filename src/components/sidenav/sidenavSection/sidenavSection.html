@@ -34,11 +34,9 @@
 
     {{ $ctrl.item.text | translate }}
 
-    <md-icon class="ump-sidenav--section-toggle">{{
-      $ctrl.isOpen
-        ? 'keyboard_arrow_down'
-        : 'keyboard_arrow_right'
-    }}</md-icon>
+    <md-icon class="ump-sidenav--section-toggle" ng-class="{ 'isOpen': $ctrl.isOpen }">
+      keyboard_arrow_down
+    </md-icon>
   </div>
 
   <div class="ump-sidenav--submenu" ng-class="{ 'isOpen': $ctrl.isOpen }" ng-if="$ctrl.item.menu">
